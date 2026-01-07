@@ -51,7 +51,7 @@ func run() int {
 		// Load GUI functions and their help definitions.
 		z3ui.DefGUI(interp, z3ui.DefaultConfig)
 		if err := z3ui.DefGUIHelp(interp); err != nil {
-			fmt.Fprintf(os.Stderr, err.Error())
+			fmt.Fprint(os.Stderr, err.Error())
 			errValue = 3
 			return
 		}
@@ -60,7 +60,7 @@ func run() int {
 
 		// Maybe load the user init file.
 		if err := interp.MaybeLoadUserInit(); err != nil {
-			fmt.Fprintf(os.Stderr, err.Error())
+			fmt.Fprint(os.Stderr, err.Error())
 			errValue = 3
 			return
 		}
