@@ -1,8 +1,6 @@
 module github.com/rasteric/z3s5-lisp
 
-go 1.23.0
-
-toolchain go1.24.0
+go 1.24.0
 
 require (
 	codeberg.org/jpt/go-jellyfish v0.0.0-20190821175037-81d50ddab23b
@@ -19,10 +17,10 @@ require (
 	github.com/rasteric/zedit-fyne v0.0.0-20240729160120-1b95614fed2b
 	github.com/shopspring/decimal v1.4.0
 	github.com/teris-io/shortid v0.0.0-20220617161101-71ec9f2aa569
-	golang.org/x/crypto v0.36.0
+	golang.org/x/crypto v0.45.0
 	golang.org/x/exp v0.0.0-20250305212735-054e65f0b394
-	golang.org/x/mod v0.24.0
-	golang.org/x/text v0.23.0
+	golang.org/x/mod v0.29.0
+	golang.org/x/text v0.31.0
 )
 
 require (
@@ -64,7 +62,7 @@ require (
 	golang.org/x/exp/shiny v0.0.0-20250305212735-054e65f0b394 // indirect
 	golang.org/x/image v0.25.0 // indirect
 	golang.org/x/mobile v0.0.0-20250305212854-3a7bc9f8a4de // indirect
-	golang.org/x/net v0.38.0 // indirect
-	golang.org/x/sys v0.31.0 // indirect
+	golang.org/x/net v0.47.0 // indirect
+	golang.org/x/sys v0.38.0 // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
 )
