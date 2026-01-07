@@ -308,11 +308,11 @@ func (interp *Interp) Define_DB() {
 			sort := colTypes[i].DatabaseTypeName()
 			switch sort {
 			case "TEXT", "VARCHAR":
-				val := *result.data[n].(*any)
+				val := *result.data[i].(*any)
 				li[i] = val
 			case "INTEGER", "INT":
 				var val int64
-				s, ok := (*result.data[n].(*any)).(string)
+				s, ok := (*result.data[i].(*any)).(string)
 				if ok {
 					val, err = strconv.ParseInt(s, 10, 64)
 					if err != nil {
@@ -321,12 +321,12 @@ func (interp *Interp) Define_DB() {
 						li[i] = goarith.AsNumber(val)
 					}
 				} else {
-					val = (*result.data[n].(*any)).(int64)
+					val = (*result.data[i].(*any)).(int64)
 					li[i] = goarith.AsNumber(val)
 				}
 			case "FLOAT":
 				var val float64
-				s, ok := (*result.data[n].(*any)).(string)
+				s, ok := (*result.data[i].(*any)).(string)
 				if ok {
 					val, err = strconv.ParseFloat(s, 64)
 					if err != nil {
@@ -335,7 +335,7 @@ func (interp *Interp) Define_DB() {
 						li[i] = goarith.AsNumber(val)
 					}
 				} else {
-					val = (*result.data[n].(*any)).(float64)
+					val = (*result.data[i].(*any)).(float64)
 					li[i] = goarith.AsNumber(val)
 				}
 			default:
