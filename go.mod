@@ -5,12 +5,12 @@ go 1.23.0
 toolchain go1.24.0
 
 require (
+	codeberg.org/jpt/go-jellyfish v0.0.0-20190821175037-81d50ddab23b
 	fyne.io/fyne/v2 v2.5.5
 	github.com/adrg/xdg v0.5.3
 	github.com/drhodes/golorem v0.0.0-20220328165741-da82e5b29246
 	github.com/faiface/beep v1.1.0
 	github.com/gookit/color v1.5.4
-	github.com/jamesturk/go-jellyfish v0.0.0-20190821175037-81d50ddab23b
 	github.com/jirenius/taskqueue v1.2.0
 	github.com/loov/hrtime v1.0.3
 	github.com/mattn/go-sqlite3 v1.14.27

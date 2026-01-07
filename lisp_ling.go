@@ -1,7 +1,7 @@
 package z3s5
 
 import (
-	ling "github.com/jamesturk/go-jellyfish"
+	ling "codeberg.org/jpt/go-jellyfish"
 	"github.com/nukata/goarith"
 )
 
